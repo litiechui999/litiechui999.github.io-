@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        
+        .section {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 { 
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: #4a5568;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: opacity 0.2s;
+        }
+        
+        .social-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .skill-tag {
+            background: #e2e8f0;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/api/placeholder/150/150" alt="个人头像" class="profile-img">
+        <h1>张小明</h1>
+        <p>网页开发者 / 设计师</p>
+        <div class="social-links">
+            <a href="#" style="background: #1da1f2;">GitHub</a>
+            <a href="#" style="background: #0077b5;">LinkedIn</a>
+            <a href="#" style="background: #ea4335;">Email</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>关于我</h2>
+            <p>你好！我是张小明，一名充满热情的网页开发者和设计师。我热爱创造美观且实用的数字产品，并且一直在探索新的技术和设计趋势。</p>
+        </section>
+        
+        <section class="section">
+            <h2>技能专长</h2>
+            <div class="skills">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">UI设计</span>
+                <span class="skill-tag">响应式设计</span>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>工作经验</h2>
+            <h3>高级前端开发工程师 @ 科技公司</h3>
+            <p>2020 - 至今</p>
+            <ul>
+                <li>负责公司主要产品的前端开发</li>
+                <li>优化网站性能和用户体验</li>
+                <li>指导初级开发人员</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>教育背景</h2>
+            <h3>计算机科学学士</h3>
+            <p>某某大学 | 2016 - 2020</p>
+        </section>
+        
+        <section class="section">
+            <h2>联系方式</h2>
+            <p>邮箱：example@email.com</p>
+            <p>微信：wxid_example</p>
+        </section>
+    </div>
+</body>
+</html>
